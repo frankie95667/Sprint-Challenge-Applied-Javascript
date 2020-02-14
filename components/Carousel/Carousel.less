@@ -1,7 +1,7 @@
 .carousel {
   .width-100();
   .flex(center, center);
-  height: 500px;
+  height: auto;
   position: relative;
   overflow: hidden;
   margin-top: 16px;
@@ -10,6 +10,7 @@
   }
   .left-button, .right-button {
     .flex(center);
+    z-index: 100;
     color: @lambda-times-color-white;
     background-color: @lambda-times-color-primary;
     font-size: 40px;
@@ -36,6 +37,7 @@
   }
   img {
     .width-100();
-    display: none;
+    position: absolute;
+    opacity: 0;
   }
 }
